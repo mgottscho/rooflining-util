@@ -1,0 +1,32 @@
+= Roofling Util
+
+An analytical tool for studying architectural performance rooflines of arbitrary workloads on different chips.
+The [traditional rooflining methodology](https://dl.acm.org/doi/10.1145/1498765.1498785) plots achieved TFLOPS versus operational intensity of a workload for a given chip.
+This tool instead plots achieved workload throughput versus operational intensity for a given chip.
+It lets you explore how different hardware compare for the same workload, and also how different implementations of the same workload compare on the same hardware.
+Take a look at `notebooks/tpu.ipynb` for an example study that plots the performance of ResNet-50 and BERT (in samples/sec) on TPUv1 and TPUv4i.
+
+== Directory Structure
+
+```
+rooflining-util/
+├─ notebooks/           # Contains independent Jupyter notebooks; each should represent a unique rooflining study.
+├─ src/                 # Common classes, functions, and their corresponding unit tests that are shared across notebooks.
+└─ README.adoc          # This document.                   
+```
+
+== Requirements
+
+You need Python 3 and link:https://jupyter.org/[Jupyter] installed on your system.
+
+If you're using Visual Studio Code (VSCode) as your development environment, this can be accomplished by installing the appropriate extensions from Microsoft.
+
+kbd:[cmd+P] (open the VSCode command box)
+----
+ext install ms-python.python
+----
+
+kbd:[cmd+P] (open the VSCode command box)
+----
+ext install ms-toolsai.jupyter
+----
