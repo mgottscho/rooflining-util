@@ -1,7 +1,7 @@
 = Rooflining Util
 
 An analytical tool for studying architectural performance rooflines of arbitrary workloads on different chips.
-The [traditional rooflining methodology](https://dl.acm.org/doi/10.1145/1498765.1498785) plots achieved TFLOPS versus operational intensity of a workload for a given chip.
+The link:https://dl.acm.org/doi/10.1145/1498765.1498785[original Roofline paper] plots achieved TFLOPS versus operational intensity of a workload for a given chip.
 This tool instead plots achieved workload throughput versus operational intensity for a given chip.
 It lets you explore how different hardware compare for the same workload, and also how different implementations of the same workload compare on the same hardware.
 Take a look at `notebooks/tpu.ipynb` for an example study that plots the performance of ResNet-50 and BERT (in samples/sec) on TPUv1 and TPUv4i.
